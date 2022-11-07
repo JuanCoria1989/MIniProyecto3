@@ -32,7 +32,6 @@ class Restaurante:
             for e in clientes[contador].platos_preferidos:
                 cocinero_elejido=random.choice(self.cocineros) 
 
-                
                 if cocinero_elejido.energia >0:
                     cocinero_elejido.cocinar(e)
                     if e[1]=="Comestible":
