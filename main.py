@@ -37,7 +37,7 @@ def crear_cocineros():
     
 def crear_clientes():
     lista_clientes=[]
-    cliente1=Cliente("choice(NOMBRES)", sample(list(INFO_PLATOS.values()),randint(1,5)))
+    cliente1=Cliente(choice(NOMBRES), sample(list(INFO_PLATOS.values()),randint(1,5)))
     cliente2=Cliente(choice(NOMBRES), sample(list(INFO_PLATOS.values()),randint(1,5)))
     cliente3=Cliente(choice(NOMBRES), sample(list(INFO_PLATOS.values()),randint(1,5)))
     cliente4=Cliente(choice(NOMBRES), sample(list(INFO_PLATOS.values()),randint(1,5)))
@@ -82,7 +82,7 @@ if __name__ == "__main__":
 
     ### Código para probar que tu miniproyecto esté funcionando correctamente  ###
     ### Corre directamente este archivo para que este código se ejecute ###
-    seed("With Love")
+    seed()
     restaurante = crear_restaurante() # Crea el restaurante a partir de la función crear_restaurante()
     clientes = crear_clientes() # Crea los clientes a partir de la función crear_clientes()
     if restaurante != None and clientes != None:
