@@ -21,11 +21,6 @@ class Restaurante:
     def recibir_pedidos(self, clientes): #Parametro es una lista con objetos de la clase Cliente "Cliente("Alberto", PLATOS_PRUEBA)" PLATOS_PRUEBA es un diccionario "Jugo Natural": ["Jugo Natural", "Bebestible"]
         #clientes = [Cliente("Juan",{"Empanadas": ["Empanadas", "Comestible"],"Mariscos": ["Mariscos", "Comestible"]}),Cliente("Pepe",{"Pepsi": ["Pepsi", "Bebestible"],"Coca-Cola": ["Coca-Cola", "Bebestible"],})]
         cant_cli_entrantes=len(clientes)#Cantidad de clientes entrantes en la lista clientes
-        print(cant_cli_entrantes)
-        print(clientes)
-        print(clientes[0].platos_preferidos)
-        print(clientes[1].platos_preferidos)
-        print(clientes[2].platos_preferidos)
         contador=0
         pedido=[]
         for i in range(cant_cli_entrantes):

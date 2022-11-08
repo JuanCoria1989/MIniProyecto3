@@ -1,7 +1,6 @@
 ##############################################################
 from random import randint, sample
 import random
-from webbrowser import Elinks
 from platos import Comestible, Bebestible
 ## Si necesita agregar imports, debe agregarlos aquí arriba ##
 
